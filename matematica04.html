@@ -1,0 +1,108 @@
+<DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <title>Sorteador de Números</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <script type="text/javascript" src="js/matematica04.js"></script>
+    </head>
+
+    <body>
+        <div class="pai">
+            <div class="cabecalho">
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo do site">
+                </div>
+                <div class="navegacao">
+                    <div class="icone">
+                        <img src="img/search.png" alt="icone de pesquisa">
+                        <img src="img/user.png" alt="icone de usuario">
+                    </div>
+                    <div class="menu">
+                        <a href="index.html">Início</a>
+                        |
+                        <a href="#">Categoria</a>
+                        |
+                        <a href="#">Área de Conhecimento</a>
+                        |
+                        <a href="#">Ajuda</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fundo-pagina-matematica">
+                <div class="titulo-areas">
+                    <div class="texto-areas">
+                        <h1>Sorteador de Números</h1>
+                    </div>
+                    <div class="linha">
+                        <hr>
+                        </hr>
+                    </div>
+                </div>
+                <div class="conteudo-mat">
+                    <div class="part-01">
+                        <div class="titulo-part-01">
+                            <h2>Bem-vindo ao Sorteador de Números</h2>
+                        </div>
+                        <div class="text-part-01">
+                            <p>Utilize nosso sorteador de números para gerar resultados aleatórios de forma rápida e
+                                prática. Perfeito para sorteios, jogos e decisões! Basta selecionar a faixa de números
+                                desejada e deixar que o sistema escolha por você.</p>
+                        </div>
+                        <div class="img-part-01">
+                            <img src="img/sorteador-numero.jpg" alt="Imagem de bolas de bingo enumeradas">
+                        </div>
+                    </div>
+
+                    <div class="part-02">
+                        <form class="form-mat">
+                            <div class="form-item">
+                                <label for="inicio">Valor Incial</label>
+                                <input class="lacuna" type="number" name="inicio" id="vinicial" placeholder="Digite o valor incial do intervalo">
+                            </div>
+                            <div class="form-item">
+                                <label for="final">Valor Final</label>
+                                <input class="lacuna" type="number" name="final" id="vfinal" placeholder="Digite o valor final do intervalo">
+                            </div>
+                            <div class="form-item">
+                                <label for="quantidade">Quantidade de Números</label>
+                                <input class="lacuna" type="number" name="quantidade" id="quantnumeros" placeholder="Digite a quantidade de números a serem sorteados">
+                            </div>
+                            <div class="form-item">
+                                <div class="submit">
+                                    <input class="btn" type="button" value="Sortear" onclick="sorteadorNumeros()">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="resultado"></div>               
+                <div class="link-categorias">
+                    <a class="link-voltar" href="matematica.html">Voltar à página anterior</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="rodape">
+            <div class="logo-rodape">
+                <img src="img/logo.png" alt="logo do site">
+            </div>
+            <div class="navegacao">
+                <div class="icone">
+                    <img src="img/fb.png" alt="icone do facebook">
+                    <img src="img/instagram.png" alt="icone do instagram">
+                    <img src="img/twitter.png" alt="icone do twitter">
+                    <img src="img/youtube.png" alt="icone do youtube">
+                </div>
+                <div class="menu">
+                    <span>Desenvolvido por IFMS - Campus Dourados</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+
+    </html>

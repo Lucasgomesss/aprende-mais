@@ -1,0 +1,123 @@
+<DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <title>Conversor de Moedas</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <script type="text/javascript" src="js/matematica02.js"></script>
+    </head>
+
+    <body>
+        <div class="pai">
+            <div class="cabecalho">
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo do site">
+                </div>
+                <div class="navegacao">
+                    <div class="icone">
+                        <img src="img/search.png" alt="icone de pesquisa">
+                        <img src="img/user.png" alt="icone de usuario">
+                    </div>
+                    <div class="menu">
+                        <a href="index.html">Início</a>
+                        |
+                        <a href="#">Categoria</a>
+                        |
+                        <a href="#">Área de Conhecimento</a>
+                        |
+                        <a href="#">Ajuda</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fundo-pagina-matematica">
+                <div class="titulo-areas">
+                    <div class="texto-areas">
+                        <h1>Conversor de Moedas</h1>
+                    </div>
+                    <div class="linha">
+                        <hr>
+                        </hr>
+                    </div>
+                </div>
+                <div class="conteudo-mat">
+                    <div class="part-01">
+                        <div class="titulo-part-01">
+                            <h2>Bem-vindo ao Conversor de Moedas</h2>
+                        </div>
+                        <div class="text-part-01">
+                            <p>Converta moedas de forma rápida e fácil com nosso conversor. Obtenha taxas de câmbio
+                                atualizadas em tempo real para diversas moedas do mundo. Simples e prático, ideal para
+                                quem precisa planejar suas finanças ou viagens</p>
+                        </div>
+                        <div class="img-part-01">
+                            <img src="img/conversor-moeda.jpg" alt="Imagem de cédulas de vário países">
+                        </div>
+                    </div>
+
+                    <div class="part-02">
+                        <form class="form-mat">
+                            <div class="form-item">
+                                <label for="de">Converter De</label>
+                                <select class="lacuna" name="de" id="moedaorigem">
+                                    <option disabled selected>Escolha a moeda inicial da conversão</option>
+                                    <option value="Dólar Americano">Dólar Americano - USD US$</option>
+                                    <option value="Euro">Euro - EUR €</option>
+                                    <option value="Franco Suíço">Franco Suíço - CHF Fr.</option>
+                                    <option value="Libra Esterlina">Libra Esterlina - GBP £</option>
+                                    <option value="Real Brasileiro">Real Brasileiro - BRL R$</option>
+                                </select>
+                            </div>
+                            <div class="form-item">
+                                <label for="para">Para</label>
+                                <select class="lacuna" name="para" id="moedafinal">
+                                    <option disabled selected>Escolha a moeda inicial da conversão</option>
+                                    <option value="Dólar Americano">Dólar Americano - USD US$</option>
+                                    <option value="Euro">Euro - EUR €</option>
+                                    <option value="Franco Suíço">Franco Suíço - CHF Fr.</option>
+                                    <option value="Libra Esterlina">Libra Esterlina - GBP £</option>
+                                    <option value="Real Brasileiro">Real Brasileiro - BRL R$</option>
+                                </select>
+                            </div>
+                            <div class="form-item">
+                                <label for="valor">Valor</label>
+                                <input class="lacuna" id="valor" type="text" name="valor"
+                                    placeholder="Digite o valor a ser convertido">
+                            </div>
+                            <div class="form-item">
+                                <div class="submit">
+                                    <input class="btn" type="button" value="Converter" onclick="converterMoedas()">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="resultado"></div>
+                <div class="link-categorias">
+                    <a class="link-voltar" href="matematica.html">Voltar à página anterior</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="rodape">
+            <div class="logo-rodape">
+                <img src="img/logo.png" alt="logo do site">
+            </div>
+            <div class="navegacao">
+                <div class="icone">
+                    <img src="img/fb.png" alt="icone do facebook">
+                    <img src="img/instagram.png" alt="icone do instagram">
+                    <img src="img/twitter.png" alt="icone do twitter">
+                    <img src="img/youtube.png" alt="icone do youtube">
+                </div>
+                <div class="menu">
+                    <span>Desenvolvido por IFMS - Campus Dourados</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+
+    </html>

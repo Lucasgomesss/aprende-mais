@@ -1,0 +1,125 @@
+<DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <title>Gastos com Combustível</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <script type="text/javascript" src="js/matematica03.js"></script>
+    </head>
+
+    <body>
+        <div class="pai">
+            <div class="cabecalho">
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo do site">
+                </div>
+                <div class="navegacao">
+                    <div class="icone">
+                        <img src="img/search.png" alt="icone de pesquisa">
+                        <img src="img/user.png" alt="icone de usuario">
+                    </div>
+                    <div class="menu">
+                        <a href="index.html">Início</a>
+                        |
+                        <a href="#">Categoria</a>
+                        |
+                        <a href="#">Área de Conhecimento</a>
+                        |
+                        <a href="#">Ajuda</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fundo-pagina-matematica">
+                <div class="titulo-areas">
+                    <div class="texto-areas">
+                        <h1>Gastos com Combustível</h1>
+                    </div>
+                    <div class="linha">
+                        <hr>
+                        </hr>
+                    </div>
+                </div>
+                <div class="conteudo-mat">
+                    <div class="part-01">
+                        <div class="titulo-part-01">
+                            <h2>Bem-vindo à Calculadora de Gastos com Combustível</h2>
+                        </div>
+                        <div class="text-part-01">
+                            <p>Confira nossa calculadora de gastos com combustível e estime facilmente o quanto você vai
+                                gastar em suas viagens. Insira a distância percorrida, o consumo médio do seu veículo e
+                                o preço do combustível para obter uma estimativa rápida e precisa dos seus custos.
+                                Simples, rápido e eficiente!</p>
+                        </div>
+                        <div class="img-part-01">
+                            <img src="img/gasto-combustivel.jpg" alt="Imagem de um carro abastecendo">
+                        </div>
+                    </div>
+
+                    <div class="part-02">
+                        <form class="form-mat">
+                            <div class="form-item">
+                                <div class="input-especial">
+                                    <div class="input-02">
+                                        <label for="origem">Origem</label>
+                                        <input class="lacuna-02" type="text" name="origem" id="origem" placeholder="Digite seu local de origem">
+                                    </div>
+                                    <div class="input-02">
+                                        <label for="destino">Destino</label>
+                                        <input class="lacuna-02" type="text" name="destino" id="destino" placeholder="Digite seu local de destino">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="input-especial">
+                                    <div class="input-02">
+                                        <label for="distancia">Distância (em km)</label>
+                                        <input class="lacuna-02" type="text" name="distancia" id="distancia" placeholder="Digite a distância da viagem">
+                                    </div>
+                                    <div class="input-02">
+                                        <label for="capacidade">Capacidade do Veículo (km/L)</label>
+                                        <input class="lacuna-02" type="text" name="capacidade" id="capacidade" placeholder="Digite a capacidade do veículo">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label for="combustivel">Valor do Combustível</label>
+                                <input class="lacuna" type="text" name="combustivel" id="valorlitro" placeholder="Digite o valor do combustível">
+                            </div>
+                            <div class="form-item">
+                                <div class="submit">
+                                    <input class="btn" type="button" value="Calcular" onclick="gastoCombustivel()">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="resultado"></div>
+                <div class="link-categorias">
+                    <a class="link-voltar" href="matematica.html">Voltar à página anterior</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="rodape">
+            <div class="logo-rodape">
+                <img src="img/logo.png" alt="logo do site">
+            </div>
+            <div class="navegacao">
+                <div class="icone">
+                    <img src="img/fb.png" alt="icone do facebook">
+                    <img src="img/instagram.png" alt="icone do instagram">
+                    <img src="img/twitter.png" alt="icone do twitter">
+                    <img src="img/youtube.png" alt="icone do youtube">
+                </div>
+                <div class="menu">
+                    <span>Desenvolvido por IFMS - Campus Dourados</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+
+    </html>

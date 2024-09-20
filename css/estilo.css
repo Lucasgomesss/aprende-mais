@@ -1,0 +1,873 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.pai {
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: arial;
+}
+
+/*CABEÇALHO*/
+.cabecalho {
+  width: 100%;
+  height: 15vh;
+  background-color: #44A1A0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-width: 0px 0px 6px 0px;
+  border-style: solid;
+  border-color: #2B4141;
+}
+
+.logo {
+  width: 15%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4vh;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.navegacao {
+  width: 30%;
+  height: 9vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-right: 4vh;
+}
+
+.icone {
+  width: 30%;
+  height: 4vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.icone img {
+  height: 80%;
+  margin-left: 1vh;
+  margin-right: 1vh;
+  cursor: pointer;
+}
+
+.menu {
+  width: 90%;
+  height: 4vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+}
+
+.menu a {
+  margin-left: 1vh;
+  margin-right: 1vh;
+  font-size: 107%;
+  text-decoration: none;
+  color: white;
+}
+
+.menu a:hover {
+  color: #CCCCCC;
+  cursor: pointer;
+}
+
+/*BANNER*/
+.banner {
+  width: 100%;
+  height: auto;
+
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.btnanterior {
+  width: 10vh;
+  height: 10vh;
+  background-color: black;
+  border-radius: 50%;
+
+  position: absolute;
+  top: calc(50% - 5vh);
+  left: 10vh;
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.btnposterior {
+  width: 10vh;
+  height: 10vh;
+  background-color: black;
+  border-radius: 50%;
+
+  position: absolute;
+  top: calc(50% - 5vh);
+  right: 10vh;
+  opacity: 50%;
+  cursor: pointer;
+}
+
+/*CONTEUDO*/
+.conteudo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.descricao {
+  width: 80%;
+  height: 15vh;
+  display: flex;
+  margin: 3vh 1vh 3vh 1vh;
+  align-items: center;
+}
+
+.descricao p {
+  text-align: center;
+  font-size: 140%;
+}
+
+.topico {
+  width: 80%;
+  height: 35vh;
+  display: flex;
+  margin: 0vh 1vh 1vh 0vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.topico-item {
+  width: 20%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.topico-img {
+  width: 14vh;
+  height: 14vh;
+  background-color: #2B4141;
+  border-radius: 50%;
+  box-shadow: 8px 4px 8px gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topico-img img {
+  width: 60%;
+}
+
+.topico-titulo {
+  width: 80%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topico-titulo h1 {
+  color: #2B4141;
+  font-size: 160%;
+}
+
+.topico-texto {
+  width: 95%;
+  height: 7vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.topico-texto p {
+  color: #E4572E;
+  text-align: center;
+  font-size: 100%;
+}
+
+.link-categorias {
+  width: 80%;
+  height: 4vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #E4572E;
+  margin: 0vh 1vh 3vh 1vh;
+}
+
+.link-categorias span {
+  margin-left: 1vh;
+  margin-right: 1vh;
+  font-size: 108%;
+}
+
+.link-categorias span:hover {
+  color: #CCCCCC;
+  cursor: pointer;
+}
+
+/*ÁREAS DE CONHECIMENTO*/
+.areas-conhecimento {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titulo-areas {
+  width: 80%;
+  height: 4vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.texto-areas {
+  width: auto;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+}
+
+.texto-areas h1 {
+  width: 100%;
+  color: #44A1A0;
+  font-size: 160%;
+}
+
+.linha {
+  width: 73%;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+}
+
+.linha hr {
+  width: 100%;
+  border-color: #44A1A0;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.area {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.area-item {
+  width: 28%;
+  height: 38vh;
+  display: flex;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+  border-radius: 3vh;
+  overflow: hidden;
+  flex-direction: column;
+  box-shadow: 8px 4px 8px gray;
+}
+
+.area-img {
+  width: 100%;
+  height: 30vh;
+}
+
+.area-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.titulo-area {
+  width: 100%;
+  height: 8vh;
+  background-color: #E4572E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-area a {
+  text-decoration: none;
+}
+
+.titulo-area h1 {
+  color: white;
+  font-size: 170%;
+}
+
+.titulo-area h1:hover {
+  color: #CCCCCC;
+  cursor: pointer;
+}
+
+/*RODAPÉ*/
+.rodape {
+  width: 100%;
+  height: 15vh;
+  background-color: #44A1A0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-rodape {
+  width: 15%;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6vh;
+  margin-top: 4vh;
+}
+
+.logo-rodape img {
+  height: 100%;
+}
+
+/*PÁGINA BIOLOGIA*/
+.celula-animal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+}
+
+.img-celula {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vh;
+  position: relative;
+}
+
+.membrana {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+/*MEMBRANA*/
+.img-membrana {
+  height: 95%;
+  position: absolute;
+}
+
+.nome1 {
+  width: 20%;
+  position: absolute;
+  top: 15%;
+  left: 16%;
+}
+
+/*MITOCÔNDRIAS*/
+.img-mitocondria1 {
+  height: 18%;
+  position: absolute;
+  top: 18%;
+  left: 34%;
+}
+
+.img-mitocondria2 {
+  height: 18%;
+  position: absolute;
+  top: 58%;
+  left: 35%;
+}
+
+.img-mitocondria3 {
+  height: 16%;
+  position: absolute;
+  top: 68%;
+  left: 56.5%;
+}
+
+.nome2 {
+  width: 20%;
+  position: absolute;
+  top: 70%;
+  left: 64.2%;
+}
+
+/*COMPLEXO DE GOLGI*/
+.img-golgi {
+  height: 16%;
+  position: absolute;
+  top: 73%;
+  left: 45%;
+}
+
+.nome3 {
+  width: 26%;
+  position: absolute;
+  top: 86%;
+  left: 55%;
+}
+
+/*LISOSSOMO*/
+.img-lisossomo1 {
+  height: 8%;
+  position: absolute;
+  top: 45%;
+  left: 33%;
+}
+
+.img-lisossomo2 {
+  height: 9%;
+  position: absolute;
+  top: 80%;
+  left: 39%;
+}
+
+.nome4 {
+  width: 20%;
+  position: absolute;
+  top: 47%;
+  left: 13%;
+}
+
+/*MICROTÚBULOS*/
+.img-microtubulo1 {
+  height: 17%;
+  position: absolute;
+  top: 39%;
+  left: 37.8%;
+}
+
+.img-microtubulo2 {
+  height: 23%;
+  position: absolute;
+  top: 8%;
+  left: 56.8%;
+}
+
+.img-microtubulo3 {
+  height: 7%;
+  position: absolute;
+  top: 64%;
+  left: 51.5%;
+}
+
+.nome5 {
+  width: 20%;
+  position: absolute;
+  top: 20.8%;
+  left: 67%;
+}
+
+/*CENTRÍOLOS*/
+.img-centriolos {
+  height: 13%;
+  position: absolute;
+  top: 58%;
+  left: 41%;
+}
+
+.nome6 {
+  width: 26%;
+  position: absolute;
+  top: 69%;
+  left: 22%;
+}
+
+/*RETÍCULO ENDOPLASMÁTICO*/
+.img-reticulo1 {
+  height: 34%;
+  position: absolute;
+  top: 16%;
+  left: 41.5%;
+}
+
+.img-reticulo2 {
+  height: 34%;
+  position: absolute;
+  top: 27.5%;
+  left: 53%;
+}
+
+.nome7 {
+  width: 20%;
+  position: absolute;
+  top: 37%;
+  left: 66%;
+}
+
+/*NÚCLEO*/
+.img-nucleo {
+  height: 24%;
+  position: absolute;
+  top: 28%;
+  left: 47%;
+}
+
+.nome8 {
+  width: 18%;
+  position: absolute;
+  top: 46%;
+  left: 60%;
+}
+
+.nome1:hover,
+.nome2:hover,
+.nome3:hover,
+.nome4:hover,
+.nome5:hover,
+.nome6:hover,
+.nome7:hover,
+.nome8:hover {
+  transform: scale(1.3);
+  filter: drop-shadow(0px 0px 10px #696969);
+}
+
+.img-membrana:hover {
+  transform: scale(1.05);
+}
+
+.img-mitocondria1:hover,
+.img-mitocondria2:hover,
+.img-mitocondria3:hover,
+.img-golgi:hover,
+.img-lisossomo1:hover,
+.img-lisossomo2:hover,
+.img-microtubulo1:hover,
+.img-microtubulo2:hover,
+.img-microtubulo3:hover,
+.img-centriolos:hover,
+.img-reticulo1:hover,
+.img-reticulo2:hover,
+.img-nucleo:hover {
+  transform: scale(1.2);
+}
+
+/*TEXTO CÉLULA*/
+.texto-celula {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+}
+
+.texto-explicacao {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.texto-explicacao p {
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 3vh;
+}
+
+.texto-explicacao strong {
+  color: #44A1A0;
+  font-size: 20px;
+}
+
+/*PÁGINA QUIZ DE GEOGRAFIA*/
+
+.conteudo-pagina-quiz {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.nome {
+  width: 80%;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  display: flex;
+}
+
+.nome input {
+  width: 100%;
+  height: 4vh;
+  border-radius: 1vh;
+  border-color: #44A1A0;
+  border-style: solid;
+}
+
+.nome input::placeholder {
+  padding-left: 1vh;
+}
+
+.conteudo-quiz {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.quiz-item {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3vh;
+}
+
+.quiz-item h3 {
+  width: 100%;
+  color: #44A1A0;
+  padding-right: 8vh;
+}
+
+.alternativa {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2vh;
+}
+
+.alternativa p {
+  width: 40%;
+  padding-left: 3vh;
+}
+
+.alternativa p input {
+  margin-right: 0.5vh;
+}
+
+.btn-geo{
+  width: 80%;
+  display: flex;
+}
+
+#enviar {
+  width: 14%;
+  height: 6vh;
+  border-radius: 1vh;
+  background-color: #44A1A0;
+  color: white;
+  border: #44A1A0;
+}
+
+#enviar:hover {
+  background-color: #3e8c8b;
+}
+
+/*PÁGINA MATEMÁTICA*/
+
+.fundo-pagina-matematica {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+}
+
+.descricao p {
+  text-align: left;
+  color: #696969;
+}
+
+.fundo-item {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.mat-item {
+  width: 40%;
+  height: 40vh;
+  background-color: #3e8c8b;
+  margin: 2vh;
+  border-radius: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mat-item02 {
+  width: 40%;
+  height: 40vh;
+  background-color: #696969;
+  margin: 2vh;
+  border-radius: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mat-item a,
+.mat-item02 a {
+  text-decoration: none;
+  width: 60%;
+  color: #ffffff;
+  text-align: center;
+  line-height: 5vh;
+}
+
+.mat-item a h1,
+.mat-item02 a h1 {
+  font-weight: 100;
+}
+
+.mat-item a h1:hover,
+.mat-item02 a h1:hover {
+  transform: scale(1.05);
+}
+
+/* PÁGINA MATEMÁTICA - CALCULADORA DE IMC */
+
+.conteudo-mat {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.part-01 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2vh;
+}
+
+.titulo-part-01 {
+  color: #44A1A0;
+}
+
+.text-part-01 {
+  color: #696969;
+}
+
+.img-part-01 {
+  width: 100%;
+  border: solid #8F8B8B;
+  border-radius: 2vh;
+  overflow: hidden;
+
+}
+
+.img-part-01 img {
+  width: 100%;
+}
+
+.part-02 {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  background-color: #F4F4F4;
+  border: solid #8F8B8B 1.5px;
+  border-radius: 2vh;
+}
+
+.form-mat {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4vh;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 2vh;
+  gap: 1vh;
+}
+
+.form-item label {
+  color: #696969;
+}
+
+.lacuna {
+  height: 5vh;
+  border: solid #8F8B8B 1.5px;
+  border-radius: 1vh;
+  padding-left: 1vh;
+}
+
+.submit {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  width: 20%;
+  background-color: #44A1A0;
+  border-radius: 1vh;
+  height: 5vh;
+  color: #ffffff;
+  border: #44A1A0;
+}
+
+.btn:hover {
+  background-color: #3e8c8b;
+}
+
+#resultado {
+  width: 80%;
+  text-align: left;
+  font-size: 18px;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.link-voltar {
+  text-decoration: none;
+  color: #E4572E;
+}
+
+.link-voltar:hover {
+  color: #8F8B8B;
+}
+
+.input-especial{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.input-02{
+  width: 45%;
+}
+
+.lacuna-02 {
+  width: 100%;
+  height: 5vh;
+  border: solid #8F8B8B 1.5px;
+  border-radius: 1vh;
+  padding-left: 1vh;
+  margin-top: 1vh;
+}
